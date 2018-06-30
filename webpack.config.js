@@ -27,12 +27,23 @@ module.exports = {
                 presets: ['es2015', 'react']
               }
             }
-          },{
-            test: /\.scss$/,
+          },
+          {
+            test: /\.(sass|scss)$/,
             use: [
               { loader: "style-loader" },
               { loader: "css-loader" },
+              { loader: "resolve-url-loader" },
               { loader: "sass-loader" }
+            ]
+          },
+          {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {}  
+              }
             ]
           }
         ]

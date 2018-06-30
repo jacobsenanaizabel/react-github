@@ -1,3 +1,31 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default (props) => <h1> initial config o react</h1>
+class SearchUser extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = { value: props.initialValue }
+
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange(event) {
+        this.setState({ value: event.target.value })
+    }
+
+    render() {
+        return (
+            <div>
+                <label>{this.props.value}</label><br />
+                <input onChange={this.handleChange} value={this.props.value} />
+            </div>
+        )
+    }
+}
+function mapStateToProps(state) {
+    return {
+        value: state.searchUser.value
+    }
+}
+export default connect(mapStateToProps)(SearchUser)

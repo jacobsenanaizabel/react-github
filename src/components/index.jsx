@@ -1,6 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SearchUser from './searchUser'
-import '../style/index.scss'
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux'
 
-ReactDOM.render(<SearchUser />, document.getElementById('root'))
+import '../style/index.scss'
+import App from './app'
+
+const reducers = combineReducers({
+    searchUser: () => ({ value: 'Test Redux' })
+})
+
+ReactDOM.render(<App/>, document.getElementById('root'))
