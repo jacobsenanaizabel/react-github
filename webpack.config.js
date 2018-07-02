@@ -7,7 +7,7 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port: 8081,
+        port: (process.env.port || 8081),
         contentBase: './src' 
     },
     resolve: {
