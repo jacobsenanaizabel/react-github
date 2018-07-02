@@ -9,8 +9,26 @@ export default class Repository extends React.Component{
         super(props);
         this.state = {
             repositoryListReturn : [],
-            repositoryList : this.props.location.state.repository
+            repositoryList : this.props.location.state.repository,
+            order:''
         }
+    }
+
+          
+    handleChange(value){
+        this.setState({
+            order: value
+        });
+
+        console.log(this.state.repositoryListReturn);
+    }
+
+    sortDecrescent(){
+
+    }
+
+    sortCrescent(){
+
     }
 
     componentDidMount() {
@@ -28,9 +46,9 @@ export default class Repository extends React.Component{
                     <h3 className="title-repository"> Repositorios </h3>
                     <div className="container-order">
                         <label className="title-order">Ordenado de forma </label>
-                        <select className="select-order">
-                            <option value="Crescente">Crescente</option>
-                            <option value="Decrescente">Decrescente</option>
+                        <select className="select-order" value={this.state.order} onChange={e => this.handleChange(e.target.value)}>
+                            <option value="cresc">Crescente</option>
+                            <option value="decresc">Decrescente</option>
                         </select>
                     </div>
                 </div>
