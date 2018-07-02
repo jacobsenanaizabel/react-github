@@ -4,7 +4,8 @@
   "description": "React app about search in github",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --inline --hot"
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "start": "webpack-dev-server --progress --colors --inline --hot"
   },
   "repository": {
     "type": "git",
