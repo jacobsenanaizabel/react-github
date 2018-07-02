@@ -11,7 +11,7 @@ module.exports = {
       compress: true,
       disableHostCheck: true,
       port: (process.env.port || 8081),
-      contentBase: './src' 
+      contentBase: './src'
     },
     resolve: {
         extensions: ['.js','.jsx'], 
