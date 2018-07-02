@@ -18,26 +18,12 @@
             margin-top: 5%;
         }
 
-        h2.user-name {
+        .user-name {
             font-size: 50px;
             margin: 0px;
         }
 
-        p.user-location {
-            font-size: 25px;
-        }
-
-        textarea#comment {
-            width: 43%;
-            background-color: #fafbfc;
-            border: none;
-            overflow: auto;
-            font-size: 18px;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li.user-follow {
+        .user-location {
             font-size: 25px;
         }
 
@@ -46,5 +32,18 @@
             height: 53px;
             margin: 5px;
         }
+        
+        > textarea {
+            background-color: #fafbfc;
+            width: 43%;
+            border: none;
+            overflow: auto;
+            font-size: 18px;
+        }
+        
+        > li {
+            font-size: 25px;
+        }
+
     }
 }

@@ -37,9 +37,9 @@ export default class SearchUser extends React.Component{
                             <img  src={user.avatar_url} class="card-avatar"/>
                             <h4 className="card-title">Score do usuario</h4>
                             <p className="card-text">{user.score}</p>
-                            <a className="btn btn-primary">
-                            <Link to={{pathname: '/user',
-                                       state: { profile: user.url } }}> Saiba mais </Link></a>
+                            <a className="btn btn-primary button-more">
+                            <Link className="text-white" to={{pathname: '/user',
+                                                        state: { profile: user.url } }}> Saiba mais </Link></a>
                         </div>
                         <div className="card-footer text-muted">
                             <label> ID Do Usuario: {user.id}</label>

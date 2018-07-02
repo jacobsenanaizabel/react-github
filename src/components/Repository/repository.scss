@@ -1,0 +1,45 @@
+.repository-container {
+    background-color: #fafbfc;
+    font-family: 'Roboto Condensed';
+    margin-left: 18%;
+    width: 60%;
+
+    .repository-body {
+        .nav-repository {
+            border-bottom: 1px solid #beb9b9;
+
+            .description {
+                font-size: 16px;
+            }
+
+            .text-name {
+                font-size: 25px;
+            }
+
+            .technique-description {
+                color: #bab3b3;
+            }            
+        }
+    }
+
+    .repository-header {
+        width: 100%;
+        height: 72px;
+
+        .container-order {
+            float: right;
+            margin-right: 5%;
+            margin-top: 2%;
+
+            label.title-order {
+                padding: 5px;
+            }
+        }
+        
+        .title-repository {
+            float: left;
+            padding-left: 5%;
+            padding-top: 2%;
+        }
+    }
+}

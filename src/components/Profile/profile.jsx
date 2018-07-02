@@ -36,8 +36,8 @@ export default class Profile extends React.Component{
                         {user.bio}
                     </textarea>
                     <button type="button" class="btn btn-primary repository-button">
-                    <Link to={{pathname: '/repository',
-                                       state: { repository: user.repos_url } }}> Repositorios </Link>
+                    <Link className="text-white" to={{pathname: '/repository',
+                                                state: { repository: user.repos_url } }}> Repositórios </Link>
                     </button>
                     <ul>                    
                         <li class="user-follow">Seguidores {user.followers}</li>
