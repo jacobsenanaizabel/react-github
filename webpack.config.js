@@ -7,8 +7,10 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port: 8081,
-        contentBase: './src' 
+      compress: true,
+      disableHostCheck: true,
+      port: (process.env.port || 8081),
+      contentBase: './src' 
     },
     resolve: {
         extensions: ['.js','.jsx'], 
