@@ -1,0 +1,35 @@
+.user-list-container {
+    align-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cabin Sketch';
+    justify-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+
+    .card.text-center {
+        margin-bottom: 2%;
+        flex-basis: 37%;
+        margin-left: 3%;
+
+        .card-avatar{
+            width: 23%;
+            margin-top: 3%;
+        }
+    }
+
+    a.btn.btn-primary{
+        margin-bottom: 5px;
+    }
+
+    .title {
+        color: #363636;
+        font-size: 58px;
+        line-height: 1.125;
+        width: 100%;
+        margin-left: 30%;
+        margin-bottom: 3%;
+    }
+}

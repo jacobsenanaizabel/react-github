@@ -1,0 +1,50 @@
+.user-container {
+    width: 60%;
+    margin-left: 18%;
+    background-color: #fafbfc;
+    font-family: 'Roboto Condensed';
+
+    .container-user {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img.user-avatar {
+            width: 25%;
+            height: 210px;
+            border-radius: 100px;
+            margin-top: 5%;
+        }
+
+        h2.user-name {
+            font-size: 50px;
+            margin: 0px;
+        }
+
+        p.user-location {
+            font-size: 25px;
+        }
+
+        textarea#comment {
+            width: 43%;
+            background-color: #fafbfc;
+            border: none;
+            overflow: auto;
+            font-size: 18px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li.user-follow {
+            font-size: 25px;
+        }
+
+        .repository-button {
+            width: 43%;
+            height: 53px;
+            margin: 5px;
+        }
+    }
+}

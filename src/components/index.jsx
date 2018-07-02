@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { combineReducers, createStore } from 'redux'
-import { Provider } from 'react-redux'
+import WebFont from 'webfontloader'
 
 import '../style/index.scss'
-import App from './app'
+import App from './Main/app'
+import 'bootstrap'
 
-const reducers = combineReducers({
-    searchUser: () => ({ value: 'Test Redux' })
-})
+WebFont.load({
+  google: {
+    families: [ 'Bangers', 'Cabin Sketch','Roboto Condensed','Roboto']
+  }
+});
 
 ReactDOM.render(<App/>, document.getElementById('root'))

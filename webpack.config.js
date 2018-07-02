@@ -8,7 +8,7 @@ module.exports = {
     },
     devServer: {
         port: 8081,
-        contentBase: './src'        
+        contentBase: './src' 
     },
     resolve: {
         extensions: ['.js','.jsx'], 
