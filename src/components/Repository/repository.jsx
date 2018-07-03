@@ -1,10 +1,11 @@
 import React from 'react'
 import axios from 'axios'
+import _ from 'lodash'
 
 import './repository.scss'
 
 export default class Repository extends React.Component{
-
+   
     constructor(props) {
         super(props);
         this.state = {
@@ -20,15 +21,8 @@ export default class Repository extends React.Component{
             order: value
         });
 
-        console.log(this.state.repositoryListReturn);
-    }
-
-    sortDecrescent(){
-
-    }
-
-    sortCrescent(){
-
+        let repoSort = _.sortBy(this.state.repositoryListReturn, [() => 'stargazers_count']);
+        this.setState({repositoryListReturn : repoSort.reverse()});
     }
 
     componentDidMount() {
@@ -47,8 +41,8 @@ export default class Repository extends React.Component{
                     <div className="container-order">
                         <label className="title-order">Ordenado de forma </label>
                         <select className="select-order" value={this.state.order} onChange={e => this.handleChange(e.target.value)}>
-                            <option value="cresc">Crescente</option>
-                            <option value="decresc">Decrescente</option>
+                            <option value="asc">Crescente</option>
+                            <option value="desc">Decrescente</option>
                         </select>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
     entry: './src/components/index.jsx',
@@ -26,6 +27,7 @@ module.exports = {
             use: {
               loader: 'babel-loader',
               options: {
+                plugins: ['lodash'],
                 presets: ['es2015', 'react']
               }
             }
@@ -56,6 +58,10 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             Popper: ['popper.js', 'default']
+          }),
+          new LodashModuleReplacementPlugin({
+            'collections': true,
+            'paths': true
           })
     ]
 }
