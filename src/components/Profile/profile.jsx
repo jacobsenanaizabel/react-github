@@ -19,7 +19,9 @@ export default class Profile extends React.Component{
             .then(response => {
                 this.setState({userInfo : [response.data]});
             }
-        )
+        ).catch(function (error) {
+            console.error('erro no request :',error);
+        });
     }
 
     render() {

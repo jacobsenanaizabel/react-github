@@ -30,7 +30,9 @@ export default class Repository extends React.Component{
             .then(response => {
                 this.setState({repositoryListReturn : response.data});
             }
-        )
+        ).catch(function (error) {
+            console.error('erro no request :',error);
+        });
     }
 
     render() {

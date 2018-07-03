@@ -21,7 +21,9 @@ export default class SearchUser extends React.Component{
                 this.setState({totalUsers : response.data.total_count});
                 this.setState({userListReturn : response.data.items});
             }
-        )
+        ).catch(function (error) {
+            console.error('erro no request :',error);
+        });
     }
 
     render() {

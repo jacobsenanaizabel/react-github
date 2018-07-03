@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port $PORT --host 0.0.0.0",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -30,8 +31,8 @@
     "babel-register": "^6.26.0",
     "bootstrap": "^4.1.1",
     "css-loader": "^0.28.11",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
@@ -55,5 +56,8 @@
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "react-test-renderer": "^16.4.1"
   }
 }
