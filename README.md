@@ -3,14 +3,14 @@
 Disponivel online :
 https://githubconcrete.herokuapp.com/
 
-Tecnologias usadas : Webpack, React, React router, Bootstrap, Sass, CSS3/Flexbox, es6
+Tecnologias usadas : Webpack, React, React router, Bootstrap, Sass, CSS3/Flexbox, es6, gitflow
  
 ![npm](https://imgur.com/KTAmhas.png)
 
 ## Configuração de ambiente 
 
 1. Install [node js](http://nodejs.org/)  
-2. Cloneo repositorio [https://github.com/jacobsenanaizabel/react-github/](https://github.com/jacobsenanaizabel/react-github/)
+2. Clone o repositório [https://github.com/jacobsenanaizabel/react-github/](https://github.com/jacobsenanaizabel/react-github/)
 3. Instale as dependencias 
 ```bash
 $ npm i 
@@ -49,8 +49,8 @@ Retorna array com dados do usuario
 | **Security**     | public                                                                     |
 
 
-### Visualizar todos os repositorios de um determinado usuario 
-Retorna lista de todos os repositorios 
+### Visualizar todos os repositórios de um determinado usuario 
+Retorna lista de todos os repositórios 
 
 | Field            | Value                                                                      |
 |----------------- |----------------------------------------------------------------------------|
