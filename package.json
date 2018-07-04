@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port $PORT --host 0.0.0.0",
-    "postinstall": "webpack -p",
     "test": "jest"
   },
   "repository": {
