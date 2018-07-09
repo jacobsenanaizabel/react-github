@@ -10,7 +10,7 @@ export default class Repository extends React.Component{
         super(props);
         this.state = {
             repositoryListReturn : [],
-            repositoryList : this.props.location.state.repository,
+            repositoryList : this.props.location.state.repository || '',
             order:''
         }
     }

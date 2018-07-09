@@ -11,11 +11,11 @@ export default class SearchUser extends React.Component{
         this.state = {
             userListReturn : [],
             totalUsers : 0,
-            userList : this.props.location.state.user
+            userList : this.props.location.state.user || ''
         }
     }
 
-    componentDidMount() {
+    componentDidMount() {                
         axios.get(`https://api.github.com/search/users?q=`+ this.state.userList, { crossdomain: true } )
             .then(response => {
                 this.setState({totalUsers : response.data.total_count});

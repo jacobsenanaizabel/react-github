@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import WebFont from 'webfontloader'
+import 'jest-enzyme'
 
 import '../style/index.scss'
 import App from './Main/app'

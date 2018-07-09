@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app';
+import React from 'react'
+import '../../setupTests'
+import renderer from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+import App from './app'
+
+describe('<App />', () => {
+
+    it('renders app with Snapshot', () => {
+        const tree = renderer.create(<App/>).toJSON();
+        expect(tree).toMatchSnapshot();
+    })
 });
