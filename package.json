@@ -9,6 +9,20 @@
     "postinstall": "webpack -p",
     "test": "jest"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jacobsenanaizabel/react-github.git"
@@ -33,10 +47,16 @@
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "imports": "^1.0.0",
     "jest": "^21.2.1",
+    "jest-cli": "^23.3.0",
+    "jest-environment-enzyme": "^6.0.2",
+    "jest-enzyme": "^6.0.2",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "lodash-webpack-plugin": "^0.11.5",
@@ -48,16 +68,18 @@
     "react-redux": "^5.1.0-test.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.4.1",
     "redux": "^4.0.0",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
+    "sinon": "git+https://github.com/simple10/sinon-webpack",
     "webfontloader": "^1.6.28",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "react-test-renderer": "^16.4.1"
+    "nock": "^9.4.1"
   }
 }
