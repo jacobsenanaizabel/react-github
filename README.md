@@ -9,17 +9,25 @@ Tecnologias usadas : Webpack, React, React router, Bootstrap, Sass, CSS3/Flexbox
 
 ## Configuração de ambiente 
 
-1. Install [node js](http://nodejs.org/)  
+1. Instale o [node js](http://nodejs.org/)  
 2. Clone o repositório [https://github.com/jacobsenanaizabel/react-github/](https://github.com/jacobsenanaizabel/react-github/)
-3. Instale as dependencias 
+3. Instale webpack global 
 ```bash
-$ npm i 
+$ npm install --global webpack
 ```
-4. Rode o projeto 
+4. Instale o server webpack 
+```bash
+$ npm install -g webpack-dev-server  
+```
+5. Instale as dependencias 
+```bash
+$ npm install 
+```
+6. Rode o projeto 
 ```bash
 $ npm run dev 
 ```
-5. Rode os testes
+7. Rode os testes
 ```bash
 $ npm test
 ```
