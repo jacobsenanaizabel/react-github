@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchUser /> renders repository snapshot 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "d50kq3",
+          "pathname": "/search",
+          "search": "",
+          "state": undefined,
+        },
+        Object {
+          "hash": "",
+          "key": "vg8sgo",
+          "pathname": "/",
+          "search": "",
+          "user": "jacobsenanaizabel",
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 2,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "d50kq3",
+        "pathname": "/search",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <SearchUser />
+</Router>
+`;

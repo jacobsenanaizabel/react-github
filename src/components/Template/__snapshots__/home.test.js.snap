@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders home snapshot 1`] = `
+<MemoryRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Home>
+      <div
+        className="home-page row"
+      >
+        <div
+          className="banner-home col-md-8"
+        >
+          <h1
+            className="title welcome"
+          >
+            Ache Seu Desenvolvedor Favorito
+          </h1>
+          <h2
+            className="subtitle"
+          >
+            De maneira muito rapida e facil, apenas digite :
+          </h2>
+          <div
+            className="col-md-6"
+          >
+            <div
+              className="input-group"
+            >
+              <input
+                className="form-control search-user"
+                name="email"
+                onChange={[Function]}
+                placeholder="Procure por..."
+                type="text"
+                value=""
+              />
+              <span
+                className="input-group-btn"
+              >
+                <button
+                  className="btn btn-default"
+                  type="button"
+                >
+                  <Link
+                    replace={false}
+                    to={
+                      Object {
+                        "pathname": "/search",
+                        "state": Object {
+                          "user": "",
+                        },
+                      }
+                    }
+                  >
+                    <a
+                      href="/search"
+                      onClick={[Function]}
+                    >
+                       Vai 
+                    </a>
+                  </Link>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <Component>
+          <footer
+            class="footer"
+          >
+            <div
+              class="container"
+            >
+              <span>
+                Feito com ❤ por Ana Jacobsen.
+              </span>
+            </div>
+          </footer>
+        </Component>
+      </div>
+    </Home>
+  </Router>
+</MemoryRouter>
+`;
